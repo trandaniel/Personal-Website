@@ -3,6 +3,7 @@ body {
   background: linear-gradient(to top, #262b2b, #8e8e95) ;
   */
   background-color: #38787e ;
+  margin: 0.5% ;
 }
 
 .navbar-default {
@@ -13,8 +14,47 @@ body {
 a.title {
   text-decoration: none ;
   color: #000000 ;
+  -webkit-transition:color 200ms ease-in-out;
+  -moz-transition:color 200ms ease-in-out;
+  -o-transition:color 200ms ease-in-out;
+  transition:color 200ms ease-in-out;
 }
 
 a.title:hover {
   color: #ffffff ;
+}
+
+/*Color of text after clicked*/
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #777 ;
+}
+
+/*Hover transition colour*/
+.navbar-default .navbar-nav > li > a {
+  -webkit-transition:color 200ms ease-in-out;
+  -moz-transition:color 200ms ease-in-out;
+  -o-transition:color 200ms ease-in-out;
+  transition:color 200ms ease-in-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff ;
+}
+
+/*Fade in dropdown menu*/
+.dropdown-menu {
+  display: block ;
+  visibility: hidden ;
+  opacity: 0 ;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1 ;
+  visibility: visible ;
+  margin-top: 0; // remove the gap so it doesn't close
 }
