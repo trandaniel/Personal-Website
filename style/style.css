@@ -6,6 +6,17 @@ body {
   margin: 0.5% ;
 }
 
+.navbar-brand {
+  color: #777 ;
+  -webkit-transition:color 200ms ease-in-out;
+  -moz-transition:color 200ms ease-in-out;
+  -o-transition:color 200ms ease-in-out;
+  transition:color 200ms ease-in-out;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #FFFFFF ;
+}
 .navbar-default {
   background-color: #454242 ;
   border-color: #000000 ;
