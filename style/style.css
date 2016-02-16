@@ -67,5 +67,10 @@ a.title:hover {
 .dropdown:hover .dropdown-menu {
   opacity: 1 ;
   visibility: visible ;
-  margin-top: 0; // remove the gap so it doesn't close
+  margin-top: 0;
+}
+
+img {
+  align-content: center;
+  
 }
