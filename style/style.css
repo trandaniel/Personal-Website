@@ -3,7 +3,8 @@ body {
   background: linear-gradient(to top, #262b2b, #8e8e95) ;
   */
   background-color: #38787e ;
-  margin: 0.5% ;
+  margin-top: 3.5%;
+  margin-left: 1%;
 }
 
 .navbar-brand {
