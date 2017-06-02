@@ -1,0 +1,22 @@
+$font-stack:    Helvetica, sans-serif ;
+$primary-color: #333 ;
+$bg-color:      #5d5b5b ;
+
+body {
+    font: 100% $font-stack ;
+    color: $primary-color ;
+    background-color: $bg-color ;
+}
+
+.parallax1{
+  background-image: url("../img/mtran01.jpg");
+
+  min-height: 1000px ;
+
+  background-attachment: fixed ;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+
+  opacity: 0.4 ;
+}
