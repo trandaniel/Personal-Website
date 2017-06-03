@@ -1,6 +1,8 @@
 $font-stack:    Helvetica, sans-serif ;
-$primary-color: #333 ;
+$primary-color: #FFF ;
+$dark-color:    #dbdbdb ;
 $bg-color:      #5d5b5b ;
+$img-path:      "../img/" ;
 
 body {
     font: 100% $font-stack ;
@@ -8,15 +10,110 @@ body {
     background-color: $bg-color ;
 }
 
-.parallax1{
-  background-image: url("../img/mtran01.jpg");
+.container {
+  color: $primary-color ;
+}
 
-  min-height: 1000px ;
+.block {
+  width: 100% ;
+  height: 70px ;
+  display: block ;
+  position: bottom ;
+  margin-top: 47% ;
+  text-align: center ;
+  line-height: 70px ;
+  font-size: 20px ;
+  > span {
+    color: white ;
+  }
+}
+
+.parallax {
+
+  min-height: 100% ;
 
   background-attachment: fixed ;
   background-position: center ;
   background-repeat: no-repeat ;
   background-size: cover ;
-
   opacity: 0.4 ;
+}
+
+.bg1 {
+  background-image: url($img-path + "trees.jpg");
+}
+
+.bg2 {
+  background-image: url($img-path + "notebook.jpg");
+}
+
+.bg3 {
+  background-image: url($img-path + "code.jpg");
+}
+
+.navbar {
+  background: rgba(#252525, 0.0) ;
+  border: none ;
+  font-size: 25px ;
+  margin-top: 10px ;
+  margin-right: 10% ;
+
+}
+
+.navbar-default .navbar-nav {
+  > li {
+
+    > a {
+      color: $dark-color ;
+      padding-bottom: 5px ;
+      padding-left: 7px ;
+      padding-right: 7px ;
+
+      -webkit-transition: color 0.2s ease-in-out ;
+      -moz-transition:    color 0.2s ease-in-out ;
+      -o-transition:      color 0.2s ease-in-out ;
+      transition:         color 0.2s ease-in-out ;
+    }
+
+    > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    > a:hover {
+      color: white ;
+    }
+
+    > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+
+}
+
+.container-fluid {
+
+  > .navbar-header {
+    margin-left: 5% ;
+    > a {
+      color: $dark-color ;
+    }
+  }
+
+}
+
+.navbar-brand {
+   font-size: 30px ;
 }
